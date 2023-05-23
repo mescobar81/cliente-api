@@ -45,6 +45,10 @@ function Cliente(props){
                             <i className="fas fa-pen-alt"></i>
                             Editar Cliente
                         </Link>
+                        <Link to={`/pedidos/nuevo/${_id}`} className="btn btn-amarillo">
+                            <i className="fas fa-plus"></i>
+                            Nuevo Pedido
+                        </Link>
                         <button type="button" 
                                 className="btn btn-rojo btn-eliminar"
                         /* Se coloca el () => para pasar el id sin tener que ejecutarse inmediatamente la funcion eliminarCliente() */

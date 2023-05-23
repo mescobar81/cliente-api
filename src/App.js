@@ -11,6 +11,8 @@ import Pedidos from "./components/pedidos/Pedidos";
 import NuevoCliente from "./components/clientes/NuevoCliente";
 import EditarCliente from './components/clientes/EditarCliente';
 import EditarProducto from './components/productos/EditarProducto';
+import NuevoProducto from './components/productos/NuevoProducto';
+import NuevoPedido from './components/pedidos/NuevoPedido';
 
 function App() {
   return (
@@ -27,7 +29,9 @@ function App() {
                   <Route exact path="/clientes/editar/:id" Component={EditarCliente} />
                   <Route exact path="/productos/editar/:id" Component={EditarProducto} />
                   <Route exact path="/productos" Component={Productos} />
+                  <Route exact path="/productos/nuevo" Component={NuevoProducto} />
                   <Route exact path="/pedidos" Component={Pedidos} />
+                  <Route exact path="/pedidos/nuevo/:id" Component={NuevoPedido} />
                 </Routes>
               </main>
           </div>
